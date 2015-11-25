@@ -9,67 +9,67 @@ M&C Saatchi Case Studies
 
 html, body {
   margin: 0;
-  	font-size: 15px;
-	font-family: 'MCSaatchi-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height: 1.6666;
+    font-size: 16px;
+  font-family: 'MCSaatchi-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6666;
 }
 
 @font-face {
-	font-family:"MCSaatchi-Heavy";src:url("fonts/mcsaatchiheavy.eot?#iefix") format('embedded-opentype'),
-	url("fonts/mcsaatchiheavy.woff") format('woff'),
-	url("fonts/mcsaatchiheavy.ttf") format('truetype'),
-	url("fonts/mcsaatchiheavy.svg#MCSaatchi-Heavy") 
-	format('svg');
-	font-weight:normal;
-	font-style:normal;
-	}
+  font-family:"MCSaatchi-Heavy";src:url("fonts/mcsaatchiheavy.eot?#iefix") format('embedded-opentype'),
+  url("fonts/mcsaatchiheavy.woff") format('woff'),
+  url("fonts/mcsaatchiheavy.ttf") format('truetype'),
+  url("fonts/mcsaatchiheavy.svg#MCSaatchi-Heavy") 
+  format('svg');
+  font-weight:normal;
+  font-style:normal;
+  }
 @font-face {
-	font-family:"MCSaatchi-Book";src:url("fonts/mcsaatchigrot-fiveone.eot?#iefix") format('embedded-opentype'),
-	url("fonts/mcsaatchigrot-fiveone.woff") format('woff'),
-	url("fonts/mcsaatchigrot-fiveone.ttf") format('truetype'),
-	url("fonts/mcsaatchigrot-fiveone.svg#MCSaatchi-Book") format('svg');
-	font-weight:normal;
-	font-style:normal;
-	}
+  font-family:"MCSaatchi-Book";src:url("fonts/mcsaatchigrot-fiveone.eot?#iefix") format('embedded-opentype'),
+  url("fonts/mcsaatchigrot-fiveone.woff") format('woff'),
+  url("fonts/mcsaatchigrot-fiveone.ttf") format('truetype'),
+  url("fonts/mcsaatchigrot-fiveone.svg#MCSaatchi-Book") format('svg');
+  font-weight:normal;
+  font-style:normal;
+  }
 @font-face {
-	font-family:"MCSaatchi-Book";src:url("fonts/mcsaatchigrot-fivethree.eot?#iefix") format('embedded-opentype'),
-	url("fonts/mcsaatchigrot-fivethree.woff") format('woff'),
-	url("fonts/mcsaatchigrot-fivethree.ttf") format('truetype'),
-	url("fonts/mcsaatchigrot-fivethree.svg#MCSaatchi-Book") format('svg');
-	font-weight:bold;
-	font-style:normal;
-	}
+  font-family:"MCSaatchi-Book";src:url("fonts/mcsaatchigrot-fivethree.eot?#iefix") format('embedded-opentype'),
+  url("fonts/mcsaatchigrot-fivethree.woff") format('woff'),
+  url("fonts/mcsaatchigrot-fivethree.ttf") format('truetype'),
+  url("fonts/mcsaatchigrot-fivethree.svg#MCSaatchi-Book") format('svg');
+  font-weight:bold;
+  font-style:normal;
+  }
 
 body {
-	font-family:'MCSaatchi-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	line-height:1.6666;
-	background-color:#FFFFFF;
-	font-size: 15px;
+  font-family:'MCSaatchi-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height:1.6666;
+  background-color:#FFFFFF;
+  font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
     font-weight: 400;
     font-style: normal;
-	}
+  }
 p {
-	font-size:15px;
-	line-height:24.999000000000002px;
-	margin-top:0;
-	margin-bottom:29.999000000000002px;
+  font-size:16px;
+  line-height:24.999000000000002px;
+  margin-top:0;
+  margin-bottom:29.999000000000002px;
 
 }
 strong {
-	font-weight:bold;
-	}
+  font-weight:bold;
+  }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family:'MCSaatchi-Heavy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight:normal;
+  font-family:'MCSaatchi-Heavy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight:normal;
 }
 .parallax-window {
     min-height: 400px;
     background: transparent;
 }
 a {
-	text-decoration:none;
+  text-decoration:none;
 
 }
 .container {
@@ -78,8 +78,8 @@ a {
 }
 
 .devidetor{
-	heigth: 30px;
-	margin-top: 30px;
+  heigth: 30px;
+  margin-top: 30px;
 }
 
 /* Parallax*/
@@ -113,7 +113,6 @@ a {
 }
 
 .site-title {
-    font-size: 18px;
     font-weight: normal;
     letter-spacing: 12px;
     font-size: 20px;
@@ -143,8 +142,8 @@ a {
 /* Main */
 
 .main {
-	text-align: center;
-	
+  text-align: center;
+  
 }
 
 .main h1 {
@@ -154,28 +153,51 @@ a {
 }
 
 .main a{
-	color:#FFFFFF;
+  color:#FFFFFF;
 }
 
 .main ul li{
-	display: inline;
-	color: white;
-	text-align: right;
+  display: inline;
+  color: white;
+  text-align: right;
     margin: 0 0 0 30px;
+    float:right;
 }
+.title-container {
+    margin: 0 auto;
+    position: relative;
+    top: 48.3%;
+    background-color: rgba(0,0,0,.6);
+    padding: 30px;
+    width: 72.3%;
+}
+.main-title{
+
+}
+
+.to-center{
+  text-align: center;
+}
+.to-left{
+  text-align: left;
+}
+.to-right{
+  text-align: right;
+}
+
 /*Inner*/
 .title-desc-inner{
-	font-size: 40px;
-	position: absolute;
+  font-size: 40px;
+  position: absolute;
     margin: 0 auto;
     max-width: 800px;
     padding: 0;
-	top: 50%;
+  top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 .inner-txt{
-	padding:50px;
+  padding:50px;
 }
 
 /* Supporting */
@@ -226,19 +248,19 @@ a {
   padding:50px 0 0;
 }
 .btn{
-	text-transform:UPPERCASE;
+  text-transform:UPPERCASE;
 }
 .btn.light, .btn.dark {
-	padding: 8px 30px ;
+  padding: 8px 30px ;
   font-size: 18px;
   display:inline-block;
 }
 .btn.light, .btn.dark:hover {
-	background-color:#e0e0e0;
+  background-color:#e0e0e0;
   color:#1c1c1c;
 }
 .btn.dark, .btn.light:hover {
-	color:#e0e0e0;
+  color:#e0e0e0;
   background-color:#1c1c1c;
 }
 
@@ -248,16 +270,17 @@ a {
     width: 100%;
     padding: 10px;
     overflow: hidden;
-    height: 200px;
+    max-width: 500px;
+    max-height: 300px;
 }
 
 .video-block{
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .feat-img{
-	min-width: 100%;
-	margin-bottom: 30px;
+  min-width: 100%;
+  margin-bottom: 30px;
 }
 /* Footer */
 footer {
@@ -281,11 +304,11 @@ footer h2 {
 
 .scrollup {
     width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	
-	border-bottom: 10px solid black;
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-bottom: 10px solid black;
     position: fixed;
     bottom: 20px;
     right: 40px;
@@ -307,7 +330,7 @@ footer h2 {
   }
 
   .supporting p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .feature h2 {
