@@ -185,6 +185,12 @@ a {
   text-align: right;
 }
 
+.align-middle {
+  position:relative;
+  top:33.33%;
+  top:78px;
+}
+
 /*Inner*/
 .title-desc-inner{
   font-size: 40px;
@@ -197,7 +203,7 @@ a {
     transform: translateX(-50%) translateY(-50%);
 }
 .inner-txt{
-  padding:50px;
+  padding:10px;
 }
 
 /* Supporting */
