@@ -177,6 +177,7 @@ a {
 
 .to-center{
   text-align: center;
+      margin: 20px 0px;
 }
 .to-left{
   text-align: left;
@@ -281,7 +282,7 @@ a {
 }
 
 .video-block{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .feat-img{
