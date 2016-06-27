@@ -50,6 +50,7 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+html,body{overflow-x: hidden;}
 p {
   font-size:16px;
   line-height:24.999000000000002px;
@@ -73,13 +74,16 @@ a {
 
 }
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
 .devidetor{
   heigth: 30px;
   margin-top: 30px;
+}
+
+.row{
 }
 
 /* Parallax*/
@@ -148,7 +152,7 @@ a {
 
 .main h1 {
   
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 
@@ -166,13 +170,18 @@ a {
 .title-container {
     margin: 0 auto;
     position: relative;
-    top: 48.3%;
-    background-color: rgba(0,0,0,.6);
+    top: 31.3%;
     padding: 30px;
-    width: 72.3%;
+    width: 46.3%;
 }
-.main-title{
-
+.main-title, .title{
+	background-color: rgba(255,255,255,.6);
+	padding:15px 20px;
+  display: inline-block;
+  width: 100%;
+}
+h1.main-title{
+  font-size: 1.7em;
 }
 
 .to-center{
@@ -194,17 +203,19 @@ a {
 
 /*Inner*/
 .title-desc-inner{
-  font-size: 40px;
+  font-size: 2em;
   position: absolute;
     margin: 0 auto;
     max-width: 800px;
-    padding: 0;
+    /*padding: 0;*/
   top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 .inner-txt{
   padding:10px;
+  position: relative;
+  top: 25px;
 }
 
 /* Supporting */
@@ -325,27 +336,8 @@ footer h2 {
 
 
 
-@media (min-width:600px) {
 
-
-  .supporting .col {
-    width: 30%;
-  }
-
-  .supporting h2 {
-    font-size: 40px;
-  }
-
-  .supporting p {
-    font-size: 18px;
-  }
-
-  .feature h2 {
-    font-size: 60px;
-  }
-}
-
-@media (max-width:991px) {
+@media screen and (max-width: 768px) {
 a#top {
     font-size: 59%;
 }
@@ -353,6 +345,64 @@ a#top {
     
     height: 100%;
 }
+.title-container{
+  width: 82.3%;
+}
+.three-box-thinking{
+  flex-direction: column;
+}
+.three-box-content{
+  margin: 0 auto;
+}
+.box-between{
+  position: initial;
+  margin: 20px auto;
+}
+}
 
+@media screen and (max-device-width: 667px) { 
+    p, body p, body span, .supporting p, .supporting span{
+      font-size: 2em ;
+      line-height:50px;
+    }
+
+    .title-container{
+      width: 82.3%;
+    }
+
+      .supporting .col {
+        width: 30%;
+      }
+      .supporting h2 {
+        font-size: 2em;
+      }
+
+      .feature h2 {
+        font-size: 2.2em;
+      }
+
+    .three-box-text{
+      padding: 15% 4%;
+        span {
+          font-size: 2.2em;
+        }
+    } 
+
+    .three-box-thinking{
+        flex-direction: column;
+        justify-content: center;
+        margin:0 auto;
+    }
+
+    .three-box-content{
+      margin: 0 auto;
+      height: 24vh;
+      width: 80%;
+    }
+
+    .box-between{
+      position: initial;
+      margin: 20px;
+    }
 
 }

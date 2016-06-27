@@ -20,6 +20,7 @@ ul {
   // padding: 30px 200px;
   max-width:940px;
   margin:0 auto;
+  padding:10px;
 }
 
 .three-box-content > li {
@@ -55,9 +56,11 @@ ul {
 
 .three-box-text {
   display: flex;
+  -webkit-display: flex;
   align-items:center;
   justify-content: center;
-  padding: 20px 5px;
+  -webkit-justify-content: center;
+  padding: 20px 8px;
 
     span {
       vertical-align: middle;
@@ -71,5 +74,5 @@ ul {
   font-weight: 800;
   color: rgba(17, 176, 192, 1);
   position: relative;
-  top: 75px;
+  top: 88px;
 }

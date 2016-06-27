@@ -7,9 +7,7 @@ M&C Saatchi Case Studies
 
 body {
   font-family:'MCSaatchi-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height:1.6666;
   background-color:#FFFFFF;
-  font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
     font-weight: 400;
@@ -17,7 +15,7 @@ body {
   }
 html,body{overflow-x: hidden;}
 p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   line-height:24.999000000000002px;
   margin-top:0;
   margin-bottom:29.999000000000002px;
@@ -31,7 +29,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   font-weight:normal;
 }
 h1, .h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .parallax-window {
     min-height: 400px;
@@ -52,6 +50,7 @@ a {
 }
 
 .row{
+    background-color: white;
 }
 
 /* Parallax*/
@@ -138,7 +137,7 @@ a {
 .title-container {
     margin: 0 auto;
     position: relative;
-    top: 32.3%;
+    top: 31.3%;
     padding: 30px;
     width: 46.3%;
 }
@@ -169,18 +168,16 @@ a {
 /*Inner*/
 .title-desc-inner{
   font-size: 2em;
-  position: absolute;
     margin: 0 auto;
     max-width: 800px;
-    /*padding: 0;*/
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
+    position: relative;
+    top: 50vh;
   width: 60%;
 }
 .inner-txt{
   padding:10px;
+  position: relative;
+  top: 25px;
 }
 
 /* Supporting */
@@ -262,28 +259,51 @@ a {
 }
 
 .video-1{
-      background: transparent url('../img/case-img/vg_wrk_ipad_1.jpg') top center no-repeat;
-      background-size: cover;
+      background: white url('../img/case-img/vg_wrk_ipad_1.jpg') top center no-repeat;
+      background-size: contain;
     }
 .video-2{
-      background: transparent url('../img/case-img/vg_wrk_ipad_2.jpg') top center no-repeat;
-      background-size: cover;
+      background: white url('../img/case-img/vg_wrk_ipad_2.jpg') top center no-repeat;
+      background-size: contain;
     }
 
-.videoWrapper {
+.video-wrapper {
   position: relative;
-  padding-bottom: 60.25%; /* 16:9 */
+  padding-bottom: 65.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+    .play-button {
+      position: absolute;
+      top: 40%;
+      left: 36%;
+      a{
+        color:black;
+        &:hover{
+          color:$colorLightHover;
+        }
+      }
+      i {
+        font-size: 5em;
+      }
+  }
+    .caption-container {
+      position: absolute;
+      bottom: -15px;
+      right: 80px;
+  }
 }
-.videoWrapper object,
-.videoWrapper embed,
-.videoWrapper video {
+.video-wrapper object,
+.video-wrapper embed,
+.video-wrapper video {
     position: absolute;
-    top: 34.3%;
+    top: 31.6%;
     left: 17%;
     width: 42.6%;
     height: auto;
+}
+
+p.caption-txt {
+    font-size: 0.8em;
 }
 .feat-img{
   min-width: 100%;
@@ -419,7 +439,7 @@ body.lightbox-open,
 /************ Media Queries ************/
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 a#top {
     font-size: 59%;
 }
@@ -432,6 +452,7 @@ a#top {
 }
 .three-box-thinking{
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 .three-box-content{
   margin: 0 auto;
@@ -443,10 +464,12 @@ a#top {
 }
 
 @media screen and (max-device-width: 667px) { 
-    p, body p, body span, .supporting p, .supporting span{
-      font-size: 1.5em ;
-      line-height:50px;
-    }
+    h1, .h1, h2, .h2, h3, .h3, span, p, 
+  .supporting p, .supporting span, .three-box-text span
+   {
+        font-size: 2.3em;
+        line-height: 1.2em;
+  }
 
     .title-container{
       width: 82.3%;
@@ -455,24 +478,18 @@ a#top {
       .supporting .col {
         width: 30%;
       }
-      .supporting h2 {
-        font-size: 2em;
-      }
-
-      .feature h2 {
-        font-size: 2.2em;
-      }
+    
 
     .three-box-text{
       padding: 15% 4%;
-        span {
-          font-size: 2.2em;
-        }
+        
     } 
 
     .three-box-thinking{
         flex-direction: column;
+        -webkit-flex-direction: column;
         justify-content: center;
+        -webkit-justify-content: center;
         margin:0 auto;
     }
 
@@ -487,5 +504,29 @@ a#top {
       margin: 20px;
     }
 
-}
+    .play-button{
+      display: none;
+    }
 
+}
+@media screen and (max-device-width: 667px) and (orientation: landscape){
+
+  .three-box-content{
+      height: 60vh;
+    }
+}
+@media screen and (max-device-width: 481px) { 
+  // h1, .h1, h2, .h2, h3, .h3, span, p, 
+  // .supporting p, .supporting span, .three-box-text span
+  //  {
+  //       font-size: 1.3em;
+  //       line-height: 1em;
+  // }
+  .three-box-content{
+    height: 100%;
+  }
+  footer{
+    height: 200px;
+  }
+  
+}
