@@ -530,3 +530,9 @@ a#top {
   }
   
 }
+
+/*********Firefox*********/
+
+@-moz-document url-prefix() { 
+  .play-button{display:none;}
+}
